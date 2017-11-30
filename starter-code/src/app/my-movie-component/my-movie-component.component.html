@@ -1,3 +1,16 @@
 <p>
   my-movie-component works!
 </p>
+
+<h3>{{movie.title}}</h3>
+<img width="300" [src]="movie.poster" alt="">
+<p>{{movie.synopsis}}</p>
+<div *ngFor="let genre of movie.genres">
+  <p>{{genre}}</p>
+</div>
+<p>{{movie.year}}</p>
+<p>{{movie.director}}</p>
+<div class="" *ngFor="let actor of movie.actors">
+  <p>{{actor}}</p>
+</div>
+<p>{{movie.room}}</p>
