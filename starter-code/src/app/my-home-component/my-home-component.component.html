@@ -1,3 +1,9 @@
 <p>
   my-home-component works!
 </p>
+
+
+<div class="" *ngFor="let movie of movies">
+  <p>{{movie.title}}</p>
+  <a [routerLink]="['../movies', movie.id]">show More</a>
+</div>
