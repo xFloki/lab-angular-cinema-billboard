@@ -1,4 +1,6 @@
-
+.movie-container {
+  text-align: center;
+}
 
 .movies {
   width: 30%;

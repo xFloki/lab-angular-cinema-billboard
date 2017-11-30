@@ -1,7 +1,8 @@
 
-
-<div class="movies" *ngFor="let movie of movies">
-  <p>ROOM {{movie.room}}</p>
-  <img width="200" height="300" [src]="movie.poster" alt=""><br>
-  <a [routerLink]="['../movie', movie.id]">{{movie.title}}</a>
+<div class="movie-container">
+  <div class="movies" *ngFor="let movie of movies">
+    <p>ROOM {{movie.room}}</p>
+    <img width="200" height="300" [src]="movie.poster" alt=""><br>
+    <a [routerLink]="['../movie', movie.id]">{{movie.title}}</a>
+  </div>
 </div>
