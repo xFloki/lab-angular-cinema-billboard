@@ -1,9 +1,11 @@
-<p>
-  my-home-component works!
-</p>
+<div class="logo">
+  <img width="120" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/4017/s300/logo-ironhack-blue.png" alt="">
+  <h2>CINEMA</h2>
+</div>
 
 
-<div class="" *ngFor="let movie of movies">
-  <p>{{movie.title}}</p>
-  <a [routerLink]="['../movie', movie.id]">show More</a>
+<div class="movies" *ngFor="let movie of movies">
+  <p>ROOM {{movie.room}}</p>
+  <img width="200" height="300" [src]="movie.poster" alt=""><br>
+  <a [routerLink]="['../movie', movie.id]">{{movie.title}}</a>
 </div>
